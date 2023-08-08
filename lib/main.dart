@@ -15,6 +15,14 @@ class BMICalculator extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF0A0E21),
         ),
+        sliderTheme: SliderTheme.of(context).copyWith(
+          activeTrackColor: Colors.white,
+          trackHeight: 3.0,
+          thumbColor: Color(0xFFEB1555),
+          overlayColor: Color(0x29EB1555),
+          thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 15.0),
+          overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
+        ),
         scaffoldBackgroundColor: const Color(0xFF0A0E21)
       ),
       home: const InputPage(),
